@@ -1,0 +1,37 @@
+.container{
+  margin-top: 5%;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+/*  width: 18 rem;*/
+}
+.i1{
+  font-size: 100px;
+/*  margin-left: 30px;*/
+  text-align: left;
+}
+i{
+  font-size: 20px;
+  margin-left: -400px;
+}
+.card-text{
+  margin-left: -130px;
+  margin-top: -50px;
+}
+h5{
+  margin-left: -100px;
+}
+/*h6{
+  margin-left: -250px;
+}
+.p1{
+  margin-left: -170px;
+}
+.s{
+
+  text-align: left;
+}*/

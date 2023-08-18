@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Spinners</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+</head>
+<body>
+	<h1>Spinners</h1>
+    <h3> About</h3>
+ <p>Bootstrap “spinners” can be used to show the loading state in your projects. They’re built only with HTML and CSS, meaning you don’t need any JavaScript to create them. You will, however, need some custom JavaScript to toggle their visibility. Their appearance, alignment, and sizing can be easily customized with our amazing utility classes.</p>
+
+<p>For accessibility purposes, each loader here includes role="status" and a nested <span class="sr-only">Loading...</span>.</p>
+
+ <h5>Border spinner</h5>
+ <br>Use the border spinners for a lightweight loading indicator.<br>
+
+<div class="spinner-border" role="status">
+  <span class="sr-only"></span>
+</div>
+<br>
+<h3>Colors</h3><br>
+The border spinner uses currentColor for its border-color, meaning you can customize the color with text color utilities. You can use any of our text color utilities on the standard spinner.
+<br>
+<div class="spinner-border text-primary" role="status">
+  <span class="sr-only"></span>
+</div>
+<div class="spinner-border text-secondary" role="status">
+  <span class="sr-only"></span>
+</div>
+<div class="spinner-border text-success" role="status">
+  <span class="sr-only"></span>
+</div>
+<div class="spinner-border text-danger" role="status">
+  <span class="sr-only"></span>
+</div>
+<div class="spinner-border text-warning" role="status">
+  <span class="sr-only"></span>
+</div>
+<div class="spinner-border text-info" role="status">
+  <span class="sr-only"></span>
+</div>
+<div class="spinner-border text-light" role="status">
+  <span class="sr-only"></span>
+</div>
+<div class="spinner-border text-dark" role="status">
+  <span class="sr-only"></span>
+</div>
+<br><br>
+Why not use border-color utilities? Each border spinner specifies a transparent border for at least one side, so .border-{color} utilities would override that.
+<br><br>
+<h3>Growing spinner</h3>
+If you don’t fancy a border spinner, switch to the grow spinner. While it doesn’t technically spin, it does repeatedly grow!
+<br>
+<div class="spinner-grow" role="status">
+  <span class="sr-only"></span>
+</div>
+<br>
+Once again, this spinner is built with currentColor, so you can easily change its appearance with text color utilities. Here it is in blue, along with the supported variants.
+<br>
+
+<div class="spinner-grow text-primary" role="status">
+  <span class="sr-only"></span>
+</div>
+<div class="spinner-grow text-secondary" role="status">
+  <span class="sr-only"></span>
+</div>
+<div class="spinner-grow text-success" role="status">
+  <span class="sr-only"></span>
+</div>
+<div class="spinner-grow text-danger" role="status">
+  <span class="sr-only"></span>
+</div>
+<div class="spinner-grow text-warning" role="status">
+  <span class="sr-only"></span>
+</div>
+<div class="spinner-grow text-info" role="status">
+  <span class="sr-only"></span>
+</div>
+<div class="spinner-grow text-light" role="status">
+  <span class="sr-only"></span>
+</div>
+<div class="spinner-grow text-dark" role="status">
+  <span class="sr-only"></span>
+</div>
+<br>
+<h3>Alignment</h3>
+Spinners in Bootstrap are built with rems, currentColor, and display: inline-flex. This means they can easily be resized, recolored, and quickly aligned.
+<br>
+<h3>Margin</h3><br>
+Use margin utilities like .m-5 for easy spacing.
+<br>
+
+<div class="spinner-border m-5" role="status">
+  <span class="sr-only"></span>
+</div>
+<br>
+ <h3>Placement</h3>
+
+Use flexbox utilities, float utilities, or text alignment utilities to place spinners exactly where you need them in any situation.
+<br>
+<h3>Flex</h3><br>
+<div class="d-flex justify-content-center">
+  <div class="spinner-border" role="status">
+    <span class="sr-only"></span>
+  </div>
+</div>
+
+<div class="d-flex align-items-center">
+  <strong>Loading...</strong>
+  <div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
+</div>
+<br>
+<h3>Floats</h3>
+
+<div class="clearfix">
+  <div class="spinner-border float-right" role="status">
+    <span class="sr-only"></span>
+  </div>
+</div>
+<br>
+<h3>Text align</h3>
+
+<div class="text-center">
+  <div class="spinner-border" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>
+<br>
+<h3>Size</h3>
+Add .spinner-border-sm and .spinner-grow-sm to make a smaller spinner that can quickly be used within other components.
+<br>
+<div class="spinner-border spinner-border-sm" role="status">
+  <span class="sr-only"></span>
+</div>
+<div class="spinner-grow spinner-grow-sm" role="status">
+  <span class="sr-only"></span>
+</div>
+<br>
+Or, use custom CSS or inline styles to change the dimensions as needed.
+<br>
+
+<div class="spinner-border" style="width: 3rem; height: 3rem;" role="status">
+  <span class="sr-only"></span>
+</div>
+<div class="spinner-grow" style="width: 3rem; height: 3rem;" role="status">
+  <span class="sr-only"></span>
+</div>
+<br><br>
+ <h3>Buttons</h3>
+Use spinners within buttons to indicate an action is currently processing or taking place. You may also swap the text out of the spinner element and utilize button text as needed.
+
+ <br>
+
+<button class="btn btn-primary" type="button" disabled>
+  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+  <span class="sr-only"></span>
+</button>
+<button class="btn btn-primary" type="button" disabled>
+  <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+</button>
+ <br>
+
+<button class="btn btn-primary" type="button" disabled>
+  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+  <span class="sr-only">Loading...</span>
+</button>
+<button class="btn btn-primary" type="button" disabled>
+  <span class="spinner-grow spinner-grow-sm" role="status" aria-hidden="true"></span>
+  Loading...
+</button>
+</body>
+</html>
